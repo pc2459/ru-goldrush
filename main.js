@@ -10,9 +10,9 @@ $(document).on('ready', function() {
 
 		console.log(target.attr('class'));
 
-		//If we've clicked on a marker...
+		//If we've clicked on a marker that exists...
 		if(target.attr('class') === 'marker-img' || target.attr('class') === 'note-input' ) {
-			// Do nothing?
+			// Do nothing
 		}
 
 		else{
@@ -21,11 +21,8 @@ $(document).on('ready', function() {
 			var marker = $('<div class="marker"><img class="marker-img" src="marker.png"></div>');
 			var note = $('<div class="note">');
 			note.append('<textarea rows="4" cols="15" class="note-input">Enter a note here...</textarea>');
-			// note.append('<a href="#">Close</a>');
 
 			marker.append(note);
-
-
 
 			// Add the marker to the DOM
 			$(this).append(marker);
@@ -60,9 +57,10 @@ $(document).on('ready', function() {
 
 
 
-		// Get rid of markers when they're clicked on
+	// Get rid of markers when JUST the image marker (.image-img) is clicked on
 	$(".map").on("click",".marker-img",function(){
-		console.log("Clicked on a marker!!");
+
+		// Delete the parent (the entire .marker box)
 		$(this).parent().remove();
 	});
 
