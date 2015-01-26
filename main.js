@@ -63,7 +63,7 @@ $(document).on('ready', function() {
 		// Get rid of markers when they're clicked on
 	$(".map").on("click",".marker-img",function(){
 		console.log("Clicked on a marker!!");
-		$(this).remove();
+		$(this).parent().remove();
 	});
 
 	});
