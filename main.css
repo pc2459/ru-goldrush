@@ -5,3 +5,14 @@
 .map img {
 	max-width: 100%;
 }
+
+.note {
+	opacity: 0.7;
+	display: inline;
+}
+
+.note-input {
+	border-radius: 5px;
+	border: 1px solid black;
+
+}
