@@ -1,7 +1,5 @@
 $(document).on('ready', function() {
 
-
-
 	// Get the X,Y position when we click on the .map div
 	// using pageX and pageY from the event (called e)
 	$(".map").on("click",function(e){
@@ -57,7 +55,7 @@ $(document).on('ready', function() {
 
 
 
-	// Get rid of markers when JUST the image marker (.image-img) is clicked on
+	// Get rid of markers when JUST the image marker (.marker-img) is clicked on
 	$(".map").on("click",".marker-img",function(){
 
 		// Delete the parent (the entire .marker box)
