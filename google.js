@@ -41,7 +41,7 @@ function initialize() {
     
 
     // Prompt user to give each marker a note
-    var content = prompt("Enter a note here...");
+    var content = prompt("Enter a note here...") || "No note given.";
 
     // Save the note in an infowindow
     var infowindow = new google.maps.InfoWindow({
