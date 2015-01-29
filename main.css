@@ -18,6 +18,10 @@
 	border: 1px solid black;
 
 }
+.marker-img {
+	width: 100%;
+	height:100%;
+}
 
 #map {
 	width: 100%;

@@ -31,9 +31,11 @@ $(document).on('ready', function() {
 				position: "absolute",
 				// Compensate 64px from the top and 32px from the side
 				// to get the tip of the marker exactly at the mousetip
-				top: e.pageY - 64, 
-				left: e.pageX - 32
+				top: e.pageY/$(window).height() +'%', 
+				left: e.pageX/$(window).width() +'%'
 			});	
+
+			console.log(e.pageY/$(window).height()*100 +'%');
 
 			$(".note-input").focus();
 
